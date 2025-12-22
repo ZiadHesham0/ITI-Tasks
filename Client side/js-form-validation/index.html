@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="form-section">
+        <form>
+            <table>
+                <tr>
+                    <td><label for="nameInput">Name :</label></td>
+                    <td>
+                        <input type="text" name="username" id="nameInput">
+                    </td>
+                    <td><span style="color: red;" id="nameError"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="numInput">Age :</label></td>
+                    <td> <input type="number" name="number" id="numInput">
+                    </td>
+                    <td><span id="numError" style="color: red;"></span></td>
+
+                </tr>
+                <tr>
+                    <td><label for="mailInput">E-mail :</label></td>
+                    <td>
+                        <input type="email" name="email" id="mailInput">
+                    </td>
+                    <td><span id="mailError" style="color: red;"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit"  id="submitBtn">Add</button>
+                    </td>
+                    <td>
+                        <button type="reset" id="resetBtbn">Reset</button>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+    <div >
+        <table id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+                <!-- <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

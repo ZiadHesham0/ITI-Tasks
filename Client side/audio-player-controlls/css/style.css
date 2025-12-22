@@ -1,0 +1,87 @@
+*{
+    padding:  0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: 40%;
+    margin: auto;
+    /* background-color: darkslategray; */
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0 0px 10px 0px;
+    overflow: hidden;
+
+}
+.audio-image {
+    width: 300px;
+    height: 300px;
+    /* margin: auto; */
+    /* border: 1px solid black; */
+    /* border-radius: 15px; */
+    /* overflow: hidden; */
+
+}
+.audio-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.time{
+    /* background-color: #09c; */
+    text-align: center;
+    padding: 10px;
+
+}
+.time input{
+    /* background-color: tomato;  */
+    margin: 10px 0;
+    width: 100%;
+}
+.controlls{
+    text-align: center;
+    display: flex;
+    /* margin: 40px 0px; */
+    background-color: rgb(13, 13, 13);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.volume{
+    /* background-color: lightblue; */
+    text-align: right;
+}
+.volume-slider{
+    width: 50%;
+    /* background-color: #09c; */
+}
+.music-list{
+    /* background-color: tomato; */
+    /* margin-top: 20px; */
+    text-align: center;
+    padding: 10px;
+
+}
+.music-list div{
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(13, 13, 13);
+    padding: 5px;
+    margin: 5px;
+    transition: all .15s ease-in;
+}
+.music-list div:hover{
+    transform: scale(1.1 , 1.1);
+}
+.active{
+    background-color: rgb(67, 67, 67);
+}

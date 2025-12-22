@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+button{
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#dataTable{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form-section{
+    text-align: center;
+    margin: 20px;
+}
+table{
+    margin: auto;
+}

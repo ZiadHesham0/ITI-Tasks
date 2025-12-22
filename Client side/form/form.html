@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2" width="400px" height="200px">
+        <thead bgcolor="lightblue">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="lightgray">
+                <td>john</td>
+                <td align="center">25</td>
+                <td align="center" rowspan="2">merged rows</td>
+            </tr>
+            <tr bgcolor="lightgray"     >
+                <td colspan="2">merged cols</td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td>jane</td>
+                <td>30</td>
+                <td >
+                    <table align="center">
+                        <thead>
+                            <th  bgcolor="yellow">Nested Table</th>
+                        </th>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td align="center">25</td>
+                <td align="right" >Lorem ipsum dolor sit amet.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio player controlls</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <audio src="audios/music0.mp3" >
+        Browser Doesn't support this audio
+    </audio>
+    <div class="container">
+
+        <!-- Audio Image -->
+        <div class="audio-image">
+            <img src="images/mario0.jpeg" alt="">
+        </div>
+
+
+
+        <!-- Time Stamp -->
+        <div class="time">  
+            <input type="range" value="0" id="progessBar">
+        </div>
+
+
+
+        <!-- Controlls -->
+        <div class="controlls">
+            <i class="fa-solid fa-forward-step fa-flip-horizontal" id="prev"></i>
+            <!-- <i class="fa-solid fa-pause "></i> -->
+            <i id="play" class="fa-solid fa-play "></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+            <div class="volume">
+                <i class="fa-solid fa-volume-high "></i>
+                <input id="volumeCtrl" type="range" value="50%" class="volume-slider">
+            </div>
+        </div>
+
+
+        <!-- Music List -->
+        <div class="music-list">
+            <h3>Music List</h3>
+            <div class="sound active" onclick="changeSong('0')">
+                <p>Super Mario</p>
+            </div>
+            <div class="sound" onclick="changeSong('1')">
+                <p>Lose You To Find Me</p>
+            </div>
+            <div class="sound" onclick="changeSong('2')">
+                <p>Bad Guy</p>  
+            </div>
+            <div class="sound" onclick="changeSong('3')">
+                <p>Mel Bedaya</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

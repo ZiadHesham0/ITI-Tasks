@@ -1,0 +1,48 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(23, 23, 23);
+        text-align: center;
+        font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: whitesmoke;
+    }
+    .header{
+        text-align: center;
+        overflow: hidden;
+        font-size: 25px;
+        /* background-color: tomato; */
+    }
+    h1{
+        margin: 25px 0 25px 0;
+
+    }
+    canvas{
+        border-radius: 15px;
+        background-color: rgb(228, 224, 224);
+    }
+    .generator{
+        margin-bottom: 15px;
+    }
+    button{
+        padding: 15px;
+        margin: 0 10px;
+        font-size: 20px;
+        border-radius: 30px;
+        background-color: whitesmoke;
+        color: black;
+        transition: all .5s ;
+    }
+    button:hover{
+        transform: scale(1.05,1.05);
+    }
+    input{
+        width: 70px;
+        height: 40px;
+        border-radius: 50%;
+        border: 0;
+        padding: 10px;
+        background-color: whitesmoke
+    }
