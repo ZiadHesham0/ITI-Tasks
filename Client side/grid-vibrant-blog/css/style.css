@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "sidebar content aboutMe"
+        "footer footer footer";
+    column-gap: 10px;
+    row-gap: 7px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(19, 13, 48);
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: aquamarine;
+    padding: 20px 15px;
+}
+
+
+.content {
+    grid-area: content;
+}
+
+.aboutMe {
+    grid-area: aboutMe;
+    background-color: darkslategray;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+
+
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(19, 13, 48);
+    padding: 19px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.post {
+    border-radius: 10px;
+    padding: 20px 12px;
+    margin: 10px;
+}
+
+.post h2 {
+    margin-bottom: 10px;
+}
+
+.post:nth-child(odd) {
+    background-color: lightcoral;
+}
+
+.post:nth-child(even) {
+    background-color: lightblue;
+}
+
+
+
+
+@media screen and ( max-width:500px ) {
+    .container{
+        grid-template-columns: 1fr ;
+            grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "aboutMe"
+        "footer";
+    }
+}
