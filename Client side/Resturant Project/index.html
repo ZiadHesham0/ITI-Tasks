@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="font-[Inter]">
+    <header
+      class="lg:bg-[image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.1)),url('assets/person-doing-their-cook-job.jpg')] bg-[image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('assets/person-doing-their-cook-job.jpg')] bg-cover bg-center md:bg-left-top h-screen"
+    >
+      <div
+        class="flex py-4 px-4 sm:px-10 bg-transparent min-h-[70px] tracking-wide relative z-50"
+      >
+        <div class="flex flex-wrap items-center justify-between gap-5 w-full">
+          <a href="" class="font-semibold text-white text-2xl">Resturant</a>
+
+          <div
+            id="collapseMenu"
+            class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+          >
+            <button
+              id="toggleClose"
+              class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border border-gray-200 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-3.5 h-3.5 fill-orange-500"
+                viewBox="0 0 320.591 320.591"
+              >
+                <path
+                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                  data-original="#000000"
+                ></path>
+                <path
+                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </button>
+
+            <ul
+              class="lg:flex gap-x-4 max-lg:space-y-3 max-lg:fixed max-lg:bg-[rgba(0,0,0,0.8)] max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+            >
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="index.html"
+                  class="hover:text-white text-orange-700 block font-medium text-[16px]"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-orange-700 text-white block font-medium text-[16px]"
+                  >Team</a
+                >
+              </li>
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-orange-700 text-white block font-medium text-[16px]"
+                  >Feature</a
+                >
+              </li>
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-orange-700 text-white block font-medium text-[16px]"
+                  >Blog</a
+                >
+              </li>
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="about.html"
+                  class="hover:text-orange-700 text-white block font-medium text-[16px]"
+                  >About</a
+                >
+              </li>
+              <li
+                class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"
+              >
+                <a
+                  href="contact.html"
+                  class="hover:text-orange-700 text-white block font-medium text-[16px]"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex max-lg:ml-auto space-x-4">
+            <button
+              class="px-4 py-2 text-sm rounded-full font-medium cursor-pointer tracking-wide text-orange-600 border border-gray-400 bg-transparent hover:bg-gray-50 transition-all"
+            >
+              Login
+            </button>
+            <button
+              class="px-4 py-2 text-sm rounded-full font-medium cursor-pointer tracking-wide text-white border border-orange-600 bg-orange-600 hover:bg-transparent transition-all"
+            >
+              Sign up
+            </button>
+
+            <button id="toggleOpen" class="lg:hidden cursor-pointer">
+              <svg
+                class="w-7 h-7"
+                fill="#ea580c"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex p-8 lg:p-14 justify-center md:justify-start lg:text-left items-center flex-wrap"
+      >
+        <div
+          class="hero-content text-center lg:text-left lg:w-2/3 xl:w-4/9 block pt-16"
+        >
+          <h2
+            class="text-white text-5xl lg:text-6xl font-[Inter] text-center lg:text-left"
+          >
+            Freshly Cooked
+          </h2>
+          <h2
+            class="text-orange-600 text-5xl lg:text-6xl font-[Inter] text-center my-3 md:my-5 lg:text-left"
+          >
+            Loving Packed
+          </h2>
+          <h2
+            class="text-white text-5xl lg:text-6xl font-[Inter] text-center lg:text-left"
+          >
+            Deliveerd Daily
+          </h2>
+          <p class="text-white text-center font-[Inter] lg:text-left my-5">
+            Creating beautifull , fast and responsive web interface
+          </p>
+          <button
+            class="btn mr-2 hover:bg-orange-500 hover:text-white duration-200 transition-all text-orange-600 hover:border-white"
+          >
+            Secondary
+          </button>
+          <button
+            class="btn shadow-none mr-3 btn-outline btn-warning text-white border-white hover:bg-white hover:text-orange-500 hover:border-white"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu-seciton p-6 pt-3 bg-[#FFEDE3]">
+        <div class="menu-title text-center my-6">
+          <h2 class="text-4xl font-extrabold text-zinc-900 font-serif">
+            Our <span class="text-orange-600">Featured</span> Meals
+          </h2>
+          <p class="text-zinc-500 mt-3">
+            Discover our most loved dishes that keep our customers coming back
+            for more.
+          </p>
+        </div>
+        <div
+          class="menu-cards grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5"
+        >
+          <div class="card bg-base-100 shadow-sm">
+            <figure class="h-[288px]">
+              <img
+                src="assets/fried-chicken-with-mushrooms-rice.jpg"
+                alt="Shoes"
+                class="hover:scale-115 transition-all duration-400 h-full w-"
+              />
+            </figure>
+            <div class="card-body pb-2">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title">Fried Chicken</h2>
+                <span class="text-red-600 font-semibold">25$</span>
+              </div>
+              <p>A card component has a figure, a body part, and inside body</p>
+            </div>
+            <div class="text-right">
+              <button
+                class="px-4 py-2 mb-3 mr-2 text-sm rounded-full font-medium cursor-pointer tracking-wide border border-orange-600 text-orange-600 bg-transparent hover:bg-orange-600 hover:text-white transition-all"
+              >
+                Get Now
+              </button>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-sm bg-black">
+            <figure class="h-[288px]">
+              <img
+                src="assets/front-view-fresh-carrot-salad-grated-salad-with-walnuts-garlic-dark-desk-diet-salad-color-nut-health.jpg"
+                alt="Shoes"
+                class="hover:scale-115 transition-all duration-400 h-fit w-fit"
+              />
+            </figure>
+            <div class="card-body pb-2">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title">Fresh Carrot Salad</h2>
+                <span class="text-red-600 font-semibold">25$</span>
+              </div>
+              <p>A card component has a figure, a body part, and inside body</p>
+            </div>
+            <div class="text-right">
+              <button
+                class="px-4 py-2 mb-3 mr-2 text-sm rounded-full font-medium cursor-pointer tracking-wide border border-orange-600 text-orange-600 bg-transparent hover:bg-orange-600 hover:text-white transition-all"
+              >
+                Get Now
+              </button>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-sm">
+            <figure class="h-[288px]">
+              <img
+                src="assets/meat-sage-with-mushrooms-potatoes-vegetables-top-view.jpg"
+                alt="Shoes"
+                class="hover:scale-115 transition-all duration-400 h-fit w-fit"
+              />
+            </figure>
+            <div class="card-body pb-2">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title">Meat Sage With Mushrooms</h2>
+                <span class="text-red-600 font-semibold">25$</span>
+              </div>
+              <p>A card component has a figure, a body part, and inside body</p>
+            </div>
+            <div class="text-right">
+              <button
+                class="px-4 py-2 mb-3 mr-2 text-sm rounded-full font-medium cursor-pointer tracking-wide border border-orange-600 text-orange-600 bg-transparent hover:bg-orange-600 hover:text-white transition-all"
+              >
+                Get Now
+              </button>
+            </div>
+          </div>
+          <!-- <div class="card bg-base-100 shadow-sm">
+            <figure class="h-[288px]">
+              <img
+                src="assets/top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title">UI Design</h2>
+                <span class="text-red-600 font-semibold">25$</span>
+              </div>
+              <p>A card component has a figure, a body part, and inside body</p>
+            </div>
+          </div> -->
+
+          <div class="card bg-base-100 shadow-sm">
+            <figure class="h-[288px]">
+              <img
+                src="assets/roasted-lamb-with-caramelized-onion-vegetables-greens.jpg"
+                alt="Shoes"
+                class="hover:scale-115 transition-all duration-400 h-fit w-fit"
+              />
+            </figure>
+            <div class="card-body pb-2">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title">Roasted Lamb</h2>
+                <span class="text-red-600 font-semibold">25$</span>
+              </div>
+              <p>A card component has a figure, a body part, and inside body</p>
+            </div>
+            <div class="text-right">
+              <button
+                class="px-4 py-2 mb-3 mr-2 text-sm rounded-full font-medium cursor-pointer tracking-wide border border-orange-600 text-orange-600 bg-transparent hover:bg-orange-600 hover:text-white transition-all"
+              >
+                Get Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-seciton p-8">
+        <div class="flex flex-wrap justify-between items-center">
+          <div class="service-content mb-5 xl:w-2/5">
+            <p class="text-orange-600">Our Menu</p>
+            <h3 class="my-3 text-4xl">
+              Why Choose <span class="text-orange-600">My Kitchen</span>?
+            </h3>
+            <p class="text-zinc-500 text-sm">
+              At My Kitchen, We take pride in delivering not just food, but an
+              experience that reminds you of home. Handcrafted daily in our home
+              kitchen, our tiffins bring you fresh, wholesome meals with
+              ever-changing menus to delight your taste buds.
+            </p>
+          </div>
+          <div
+            class="service-cards xl:w-[650px] flex flex-wrap justify-center gap-6"
+          >
+            <div
+              class="card p-4 rounded-xl w-[270px] lg:w-[299px] bg-orange-600 shadow-sm shadow-gray-500"
+            >
+              <span class="text-white mt-1 text-2xl"
+                ><i class="fa-solid fa-mug-hot"></i
+              ></span>
+              <h4 class="mb-2 text-white mt-3.5 font-semibold">
+                Veg/Non-Veg Options
+              </h4>
+              <p class="text-white text-sm">
+                Choose from a variety of vegetarian and non-vegetarian dishes
+                prepared with fresh ingredients.
+              </p>
+            </div>
+            <div
+              class="card p-4 md:order-first rounded-xl w-[270px] lg:w-[299px] border border-zinc-200 shadow-sm shadow-gray-500"
+            >
+              <span class="text-orange-600 mt-1 text-2xl"
+                ><i class="fa-solid fa-mug-hot"></i
+              ></span>
+              <h4 class="mb-2 mt-3.5 font-semibold">Veg/Non-Veg Options</h4>
+              <p class="text-zinc-500 text-sm">
+                Choose from a variety of vegetarian and non-vegetarian dishes
+                prepared with fresh ingredients.
+              </p>
+            </div>
+            <div
+              class="card p-4 rounded-xl w-[270px] lg:w-[299px] bg-orange-600 shadow-sm shadow-gray-500"
+            >
+              <span class="text-white mt-1 text-2xl"
+                ><i class="fa-solid fa-mug-hot"></i
+              ></span>
+              <h4 class="mb-2 text-white mt-3.5 font-semibold">
+                Veg/Non-Veg Options
+              </h4>
+              <p class="text-white text-sm">
+                Choose from a variety of vegetarian and non-vegetarian dishes
+                prepared with fresh ingredients.
+              </p>
+            </div>
+            <div
+              class="card p-4 rounded-xl w-[270px] lg:w-[299px] border border-zinc-200 shadow-sm shadow-gray-500"
+            >
+              <span class="text-orange-600 mt-1 text-2xl"
+                ><i class="fa-solid fa-mug-hot"></i
+              ></span>
+              <h4 class="mb-2 mt-3.5 font-semibold">Veg/Non-Veg Options</h4>
+              <p class="text-zinc-500 text-sm">
+                Choose from a variety of vegetarian and non-vegetarian dishes
+                prepared with fresh ingredients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-zinc-900 px-5 py-5">
+      <!-- <h3 class="text-white text-center text-2xl mb-3">Resturant</h3> -->
+      <p class="text-center text-white text-sm">
+        &copy; 2024 Resturant. All rights reserved.
+      </p>
+      <ul class="list-none flex gap-5 text-sm text-white justify-center mt-3">
+        <li class="hover:text-orange-600 duration-200 transition-all">
+          <a href="#">LinkedIn</a>
+        </li>
+        <li class="hover:text-orange-600 duration-200 transition-all">
+          <a href="#">GitHub</a>
+        </li>
+        <li class="hover:text-orange-600 duration-200 transition-all">
+          <a href="#">Email</a>
+        </li>
+        <li class="hover:text-orange-600 duration-200 transition-all">
+          <a href="#">Phone</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script>
+      var toggleOpen = document.getElementById("toggleOpen");
+      var toggleClose = document.getElementById("toggleClose");
+      var collapseMenu = document.getElementById("collapseMenu");
+
+      function handleClick() {
+        if (collapseMenu.style.display === "block") {
+          collapseMenu.style.display = "none";
+        } else {
+          collapseMenu.style.display = "block";
+        }
+      }
+
+      toggleOpen.addEventListener("click", handleClick);
+      toggleClose.addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>

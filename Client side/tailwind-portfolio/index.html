@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="">
+
+    <nav class="flex justify-between py-4 px-8 bg-white  shadow-md fixed w-full top-0 z-10">
+        <div class="">
+            <a href="#" class="text-xl font-bold text-purple-500 ">MyPortfolio</a>
+        </div>
+        <div class="hidden md:block">
+            <ul class="list-none flex gap-4 font-semibold">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="block md:hidden w-6 h-6">
+            <a href=""><img src="assets/menu.png" alt=""></a>
+        </div>
+
+    </nav>
+
+    <header class="">
+        <div
+            class="flex bg-linear-65 from-purple-700 to-pink-200 p-16 justify-center lg:text-left text-center lg:justify-between items-center flex-wrap h-screen">
+            <div class="hero-content lg:w-2/4 xl:w-3/5  block py-14 ">
+                <h2 class="text-white text-5xl">
+                    Build Modern UI Experiences
+                </h2>
+                <p class="text-white my-5">Creating beautifull , fast and responsive web interface</p>
+                <button
+                    class="btn mr-2 hover:bg-purple-700 hover:text-white duration-200 transition-all text-purple-600 hover:border-white">Secondary</button>
+                <button
+                    class="btn shadow-none mr-3 btn-outline btn-warning text-white border-white hover:bg-white hover:text-purple-900 hover:border-white">Contact
+                    Me</button>
+
+            </div>
+            <div class="hero-image w-2/3 md:w-4/8 lg:w-2/5 rounded-md overflow-hidden">
+                <img src="assets/hero-img.jpg" alt="">
+            </div>
+    </header>
+
+
+    <main>
+        <section class="service-seciton p-6">
+            <div class="service-title text-center my-10">
+                <h2 class="text-3xl font-bold">Service</h2>
+            </div>
+            <div class="service-cards grid   grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5">
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-sm">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="project-seciton p-6">
+            <div class="project-title text-center my-10">
+                <h2 class="text-3xl font-bold">project</h2>
+            </div>
+            <div class="project-cards grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5">
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="assets/hero-img.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-black shadow-none outline-none btn-primary w-full h-8">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="assets/hero-img.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-black shadow-none outline-none btn-primary w-full h-8">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="assets/hero-img.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-black shadow-none outline-none btn-primary w-full h-8">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="assets/hero-img.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-black shadow-none outline-none btn-primary w-full h-8">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100  shadow-sm">
+                    <figure>
+                        <img src="assets/hero-img.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">UI Design</h2>
+                        <p>A card component has a figure, a body part, and inside body
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-black shadow-none outline-none btn-primary w-full h-8">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="skills p-6 bg-slate-100">
+            <div class="project-title text-center my-10">
+                <h2 class="text-3xl font-bold">project</h2>
+            </div>
+            <div class="skills-content grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5">
+
+                <div class="card bg-base-100 shadow-sm shadow-soft shadow-slate-500">
+                    <div class="card-body py-4 ">
+                        <h2 class="card-title">UI Design</h2>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-sm shadow-soft shadow-slate-500">
+                    <div class="card-body py-4 ">
+                        <h2 class="card-title">UI Design</h2>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-sm shadow-soft shadow-slate-500">
+                    <div class="card-body py-4 ">
+                        <h2 class="card-title">UI Design</h2>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-sm shadow-soft shadow-slate-500">
+                    <div class="card-body py-4 ">
+                        <h2 class="card-title">UI Design</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="getInTouch">
+            <div class="getInTouch-content text-center bg-linear-65 from-purple-700 to-pink-200 text-white py-16 mt-10 ">
+                <h2 class="text-3xl font-bold mb-4">Lets Work Toghter</h2>
+                <button
+                    class="btn shadow-none mr-3 btn-outline btn-warning text-white border-white hover:bg-white hover:text-purple-900 hover:border-white">Contact
+                    Me</button>
+            </div>
+        </div>
+
+        <footer class="py-10 px-5 bg-gray-900 text-white">
+            <div class="footer-content">
+                <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+            <ul class= "list-none flex gap-5 text-sm text-white mt-4"  >    
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+
+</html>
