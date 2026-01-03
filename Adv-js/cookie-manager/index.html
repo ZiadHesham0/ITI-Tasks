@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cookie-manager.js</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        overflow: auto;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-zinc-950 p-2 pt16 min-h-screen box-border flex items-center font-serif"
+  >
+    <div
+      id="formContainer"
+      class="form lg:w-[50%] w-[80%] mx-auto p-6 border-l border-r rounded-2xl border-gray-600"
+    >
+      <div
+        class="w-full h-full flex items-center justify-between flex-wrap gap-y-5"
+      >
+        <div class="mb-4 w-full">
+          <label class="block text-sm font-medium text-gray-300" for="userName"
+            >Full Name</label
+          >
+          <input
+            id="userName"
+            class="mt-1 p-2 w-full bg-gray-600 border border-gray-600 rounded-md text-white"
+            type="text"
+          />
+          <span id="nameError" class="text-red-700 text-sm hidden"
+            >Please Enter Three or more Character</span
+          >
+        </div>
+        <div class="mb-4 w-full">
+          <label class="block text-sm font-medium text-gray-300" for="userAge"
+            >Age</label
+          >
+          <input
+            id="userAge"
+            class="mt-1 p-2 w-full bg-gray-600 border border-gray-600 rounded-md text-white"
+            type="number"
+          />
+          <span id="AgeError" class="text-red-700 text-sm hidden"
+            >Age must be Bigger than 16</span
+          >
+        </div>
+        <div class="mb-4 w-full">
+          <label class="block text-sm font-medium text-gray-300" for="userColor"
+            >Color</label
+          >
+          <input
+            id="userColor"
+            class="mt-1 p-2 w-full bg-gray-600 border border-gray-600 h-9 rounded-md text-white"
+            type="color"
+          />
+        </div>
+        <div class="gender bg--600 w-full" id="userGenderContainer">
+          <div class="flex gap-3 items-center gap-x-4">
+            <p class="text-white text-lg">Choose Your gender :</p>
+
+            <input
+              type="radio"
+              id="male-gender"
+              value="male"
+              name="userGender"
+            />
+            <label for="male-gender">
+              <div class="w-10 rounded-full overflow-hidden">
+                <img src="assets/male.jpg" alt="" />
+              </div>
+            </label>
+
+            <input
+              type="radio"
+              id="female-gender"
+              value="female"
+              name="userGender"
+            />
+            <label for="female-gender">
+              <div class="w-10 rounded-full overflow-hidden">
+                <img src="assets/female.jpg" alt="" />
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <button  id="submitBtn"
+          class="text-sm cursor-pointer relative font-semibold text-white group px-6 py-2.5"
+        >
+          <span class="relative z-10">Let's Start?</span>
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+          ></span>
+        </button>
+      </div>
+    </div>
+
+
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
