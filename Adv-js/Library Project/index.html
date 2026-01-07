@@ -1,0 +1,345 @@
+<!-- <!DOCTYPE html> -->
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Task</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-gray-200 p-2 min-h-screen box-border font-serif pt-20"
+  >
+    <nav class="fixed top-0 right-0 left-0 z-50">
+      <div class="navbar bg-base-100 shadow-md text-blue-500 font-light">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-5 w-5 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="w-full">
+      <!-- Number Of books form -->
+      <div
+        id="booksNumContainer"
+        class="form  lg:w-[50%] w-[80%] mx-auto min-h-40 p-6 bg-white shadow-md rounded-2xl flex flex-wrap justify-end items-center"
+      >
+        <h3 class="text-center w-full text-blue-500 text-2xl">
+          Number Of Books
+        </h3>
+        <div class="mb-4 w-full">
+          <label
+            class="block mt-3 text-sm text-gray-600 font-bold"
+            for="booksNumInput"
+            >Enter Number of books</label
+          >
+          <input
+            id="booksNumInput"
+            class="my-[5px] p-2 w-full border text-gray-600 border-blue-500 bg-gray-50 rounded-md  outline-0 focus:o focus:border-blue-500 focus:border-2"
+            type="number"
+          />
+          <span
+            id="numError"
+            class="text-red-500 font-extralight text-sm hidden"
+            >Please Enter Number From 1 : 10</span
+          >
+        </div>
+        <button
+          id="numSubmitBtn"
+          class="text-sm cursor-pointer relative font-semibold text-blue-500 group px-6 py-2.5"
+        >
+          <span class="relative z-10">Let's Start</span>
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </button>
+      </div>
+
+      <!-- Books Info Form  -->
+      <div class="hidden" id="booksInfoForm">
+        <div
+          class="form lg:w-[50%] w-[80%] mx-auto p-6 rounded-2xl bg-white shadow-md flex flex-wrap justify-end items-center"
+        >
+          <h3 class="text-center w-full text-blue-500 text-2xl">
+            Books Information
+          </h3>
+          <div class="mb-[6px] w-full">
+            <label
+              class="block text-sm text-gray-600 font-bold"
+              for="bookNameInput"
+              >Book Name</label
+            >
+            <input
+              id="bookNameInput"
+              class="mt-1 p-2 w-full border-blue-500 bg-gray-50 rounded-md text-black outline-0 focus:o focus:border-blue-500 focus:border-2"
+              type="text"
+            />
+            <span
+              id="bookNameError"
+              class="text-red-500 font-extralight text-sm hidden"
+              >Please Enter 3 or more Characters</span
+            >
+          </div>
+          <div class="mb-[6px] w-full">
+            <label
+              class="block text-sm text-gray-600 font-bold"
+              for="bookPriceInput"
+              >Book Price</label
+            >
+            <input
+              id="bookPriceInput"
+              class="mt-1 p-2 w-full border-blue-500 bg-gray-50 rounded-md text-black outline-0 focus:o focus:border-blue-500 focus:border-2"
+              type="number"
+            />
+            <span
+              id="bookPriceError"
+              class="text-red-500 font-extralight text-sm hidden"
+              >Please Enter a valid Price</span
+            >
+          </div>
+          <div class="mb-[6px] w-full">
+            <label
+              class="block text-sm text-gray-600 font-bold"
+              for="authorNameInput"
+              >Author Name</label
+            >
+            <input
+              id="authorNameInput"
+              class="mt-1 p-2 w-full border-blue-500 bg-gray-50 rounded-md text-black outline-0 focus:o focus:border-blue-500 focus:border-2"
+              type="text"
+            />
+            <span
+              id="authorNameError"
+              class="text-red-500 font-extralight text-sm hidden"
+              >Please Enter 3 or more Characters</span
+            >
+          </div>
+          <div class="mb-[6px] w-full">
+            <label
+              class="block text-sm text-gray-600 font-bold"
+              for="authorEmailInput"
+              >Author Email</label
+            >
+            <input
+              id="authorEmailInput"
+              class="mt-1 p-2 w-full border-blue-500 bg-gray-50 rounded-md text-black outline-0 focus:o focus:border-blue-500 focus:border-2"
+              type="text"
+            />
+            <span
+              id="authorEmailError"
+              class="text-red-500 font-extralight text-sm hidden"
+              >Please Enter Number From 1 : 10</span
+            >
+          </div>
+
+          <button
+            id="BookInfoSubmitBtn"
+            class="text-md cursor-pointer relative font-semibold text-blue-500 group px-6 py-2.5"
+          >
+            <span class="relative z-10">Next</span>
+            <span
+              class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"
+            ></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Library -->
+      <div class="page-3  hidden" id="page3">
+        <!-- You can open the modal using ID.showModal() method -->
+
+        <div class="overflow-x-auto ">
+          <table class="table overflow-hidden mt-2  bg-black" id="booksPage">
+            <!-- head -->
+            <thead class="bg-blue-500 rounded-md text-white text-center sticky top-0 z-10">
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Author Name</th>
+                <th>Author Email</th>
+                <th colspan="2" class="">
+                  <button class="btn text-xs w-35/100 text-gray-600" onclick="my_modal_3.showModal()">
+                    Add New Book
+                  </button>
+                  <dialog id="my_modal_3" class="modal">
+                    <div class="modal-box">
+                      <form method="dialog">
+                        <button
+                          class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-gray-600"
+                        >
+                          ✕
+                        </button>
+                      </form>
+
+                      <div class="w-full">
+                        <!-- Books Info Form  -->
+                        <div class="mb-2 w-full" id="modalBooksInfoForm">
+                          <div
+                            class="form w-[100%] mx-auto p-6 rounded-2xl bg-white justify-end items-center"
+                          >
+                            <h3
+                              class="text-center w-full text-blue-500 text-2xl mb-4"
+                            >
+                              Books Information
+                            </h3>
+                            <div class="mb-[6px] w-full">
+                              <label
+                                class="text-start block text-sm text-gray-600 font-bold"
+                                for="modalBookNameInput"
+                                >Book Name</label
+                              >
+                              <input
+                                id="modalBookNameInput"
+                                class="mt-1 p-2 w-full block border-blue-500 bg-gray-50 rounded-md text-black outline-0 focus:o focus:border-blue-500 focus:border-2"
+                                type="text"
+                              />
+                             <div class="text-start w-full m-0">
+                               <span
+                                id="modalBookNameError"
+                                class=" text-red-500 text-start font-extralight text-sm hidden "
+                                >Please Enter 3 or more Characters</span>
+                             </div>
+                              
+                            </div>
+                            <div class="mb-[6px] w-full">
+                              <label
+                                class="text-start block text-sm text-gray-600 font-bold"
+                                for="modalBookPriceInput"
+                                >Book Price</label
+                              >
+                              <input
+                                id="modalBookPriceInput"
+                                class="mt-1 p-2 w-full border-blue-500 bg-gray-50 rounded-md text-black outline-0 focus:o focus:border-blue-500 focus:border-2"
+                                type="number"
+                              />
+                              <div class="text-start w-full">
+                                <span
+                                id="modalBookPriceError"
+                                class=" text-red-500 font-extralight text-sm hidden"
+                                >Please Enter a valid Price</span>
+                              </div>
+                              
+                            </div>
+                            <div class="mb-[6px] w-full">
+                              <label
+                                class=" text-start block text-sm text-gray-600 font-bold"
+                                for="modalAuthorNameInput"
+                                >Author Name</label
+                              >
+                              <input
+                                id="modalAuthorNameInput"
+                                class="mt-1 p-2 w-full border-blue-500 bg-gray-50 rounded-md text-black outline-0 focus:o focus:border-blue-500 focus:border-2"
+                                type="text"
+                              />
+                             <div class="text-start w-full">
+                               <span
+                                id="modalAuthorNameError"
+                                class="text-red-500 font-extralight text-sm hidden"
+                                >Please Enter 3 or more Characters</span
+                              >
+                             </div>
+                            </div>
+                            <div class="mb-[6px] w-full">
+                              <label
+                                class="text-start block text-sm text-gray-600 font-bold"
+                                for="modalAuthorEmailInput"
+                                >Author Email</label
+                              >
+                              <input
+                                id="modalAuthorEmailInput"
+                                class="mt-1 p-2 w-full border-blue-500 bg-gray-50 rounded-md text-black outline-0 focus:o focus:border-blue-500 focus:border-2"
+                                type="email"
+                              />
+                             <div class="text-start w-full">
+                               <span
+                                id="modalAuthorEmailError"
+                                class="text-red-500 font-extralight text-sm hidden"
+                                >Please Enter Number From 1 : 10</span
+                              >
+                             </div>
+                            </div>
+
+                            <button
+                              id="modalBookInfoSubmitBtn"
+                              class="text-md cursor-pointer relative font-semibold text-blue-500 group px-6 py-2.5"
+                            >
+                              <span class="relative z-10">Add</span>
+                              <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"
+                              ></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </dialog>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-600 font-bold text-center " id="tableBody">
+              <!-- row 1 -->
+              <tr class="hover:bg-base-300">
+                <th>1</th>
+                <td>Hart Hagerty</td>
+                <td>Desktop Support Technician</td>
+                <td>Purple</td>
+                <td>Purple</td>
+                <td>
+                  <button
+                    id="BookInfoSubmitBtn"
+                    data-id="0"
+                    class="text-md cursor-pointer relative font-semibold text-blue-500 group px-6 py-2.5"
+                  >
+                    <span class="relative z-10">Update</span>
+                    <span
+                      class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    id="BookInfoSubmitBtn"
+                    data-id="0"
+                    class="text-md cursor-pointer relative font-semibold text-red-500 group px-6 py-2.5"
+                  >
+                    <span class="relative z-10">Delete</span>
+                    <span
+                      class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </button>
+                </td>
+              </tr>
+              
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/modalScript.js"></script>
+  </body>
+</html>
