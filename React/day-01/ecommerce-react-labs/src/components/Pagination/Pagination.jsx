@@ -2,12 +2,13 @@ import React from "react";
 
 function Pagination(props) {
   const { handlePagination, itemsPerPage, totalItems , currentPage } = props;
-//   console.log(itemsPerPage , totalItems , currentPage);
+  // console.log(itemsPerPage , totalItems , currentPage);
 
   
 
   const calculatePageNo = () => {
-    const totalPages = Math.round(totalItems / itemsPerPage);
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    console.log(totalPages);
     let buttons = [];
     for (let i = 1; i <= totalPages; i++) {
       buttons.push(

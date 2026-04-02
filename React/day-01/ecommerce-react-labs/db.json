@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Large Burger",
+      "price": 50,
+      "categoryID": 1,
+      "count": 0,
+      "isInCart": false
+    },
+    {
+      "id": "5",
+      "name": "medium Beef",
+      "count": 0,
+      "price": 60,
+      "categoryID": 2,
+      "isInCart": false
+    },
+    {
+      "id": "2",
+      "name": "Large Beef",
+      "count": 0,
+      "price": 70,
+      "categoryID": 1,
+      "isInCart": false
+    },
+
+    {
+      "id": "4",
+      "name": "medium Burger",
+      "count": 0,
+      "price": 40,
+      "categoryID": 2,
+      "isInCart": false
+    },
+
+    {
+      "id": "6",
+      "name": "medium Fries",
+      "count": 0,
+      "price": 20,
+      "categoryID": 2,
+      "isInCart": false
+    },
+    {
+      "id": "9",
+      "name": "small Fries",
+      "count": 0,
+      "price": 10,
+      "categoryID": 3,
+      "isInCart": false
+    },
+    {
+      "id": "7",
+      "name": "small Burger",
+      "count": 0,
+      "price": 30,
+      "categoryID": 3,
+      "isInCart": false
+    },
+    {
+      "id": "3",
+      "name": "Large Fries",
+      "count": 0,
+      "price": 30,
+      "categoryID": 1,
+      "isInCart": false
+    },
+    {
+      "id": "8",
+      "name": "small Beef",
+      "count": 0,
+      "price": 50,
+      "categoryID": 3,
+      "isInCart": false
+    },
+
+    {
+      "id": "10",
+      "name": "Large Chicken",
+      "price": 200,
+      "categoryID": 1,
+      "count": 0,
+      "isInCart": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Large"
+    },
+    {
+      "id": "2",
+      "name": "Medium"
+    },
+    {
+      "id": "3",
+      "name": "Small"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
